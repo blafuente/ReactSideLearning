@@ -1,0 +1,10 @@
+What is react? 
+- "A JavaScript Library for building User Interfaces"
+- building JavaScript apps
+ 
+Components? 
+-Header area, navbar/sidebar, content
+- split up website/webapp into Components to make it easier 
+- writing custom HTML elements
+
+
