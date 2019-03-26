@@ -7,4 +7,92 @@ Components?
 - split up website/webapp into Components to make it easier 
 - writing custom HTML elements
 
+Why React? 
+- UI State becomes difficult to handle with Vanilla JavaScript
+- Focus on Business Logic, not on preventing your App from exploding.
+    - plus Framework Creators probably wrtie better code
+- Huge Ecosystem, Active Community, High Performance 
+
+React Alternatives
+- Angular JavaScript
+- Vue JS 
+
+Two Kinds of Applications 
+- Single Page Application 
+-- Only ONE HTML Page, Content is (re)rendered on Client
+-- Typically only ONE ReactDOM.render() call
+
+- Multi Page Application
+-- Multiple HTML Pages, Content is rendered on Server 
+-- One ReactDOM.render() call per "widget"
+
+Exports & Imports (Modules)
+
+person.js 
+const person = {
+    name: 'Brian'
+}
+export default person 
+
+utility.js
+export const clean = () => {...}
+export const baseData = 10;
+
+// imports default and ONLY export of the file Name in the receiving file is up to you 
+app.js
+import person from './person.js'
+import prs from './person.js'
+
+import { baseData } from './utility.js'
+import { clean } from './utility.js'
+
+
+Classes 
+
+class Perosn (
+    name = 'Brian'      // Property
+    call = () => {...}  // Method
+)
+
+Classes, Properties & Methods
+
+Properties are like "variables attached to classes/objects" 
+ES6
+constructor (){
+    this.myProperty = 'value'
+}
+ES7
+myProperty = 'value'
+
+Methods are like "functions attachted to classes/objects"
+ES6 
+myMethod () {...}
+ES7
+myMethod = () => {...} 
+
+Spread & Rest Operators
+    ...
+Spread 
+- Used to split up array elements OR object properties 
+- const newArray = [...oldArray,1,2]
+- const newObject = {...oldObject,newProp:5 }
+
+Rest 
+- Used to merge a list of function arguments into an array 
+function sortArgs(...args){
+    return args.sort()
+}
+
+Destructuring 
+- Easily extract array elements or object properties and store them in variables
+= Array Destructuring
+[a,b] = ['Hello','Brian']
+console.log(a) // Hello
+console.log(b) // Brian 
+
+= Object Destructuring
+{name} = {name:'Brian',age:30}
+console.log(name) // Brian
+console.log(age)  // undefined
+
 
