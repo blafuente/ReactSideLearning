@@ -1,0 +1,12 @@
+Using a Build Workflow 
+- Recommended for SPAs and MPAs 
+WHY?
+- Optimize Code
+- User Next-Gen JavaScript Features 
+- Be More Productive 
+HOW?
+- Use Dependency Management Tool: npm or yarn
+- Use Bundler, Recommended: Webpack
+- User compiler (next-gen JavaScript) Babel + Presets
+- User a Development Server 
+
